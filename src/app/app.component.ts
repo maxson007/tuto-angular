@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my project';
+   _isAuth = false;
+  constructor() {
+    setTimeout(
+      () => {
+        this._isAuth = true;
+      }, 4000
+    );
+  }
+
+  get isAuth(): boolean {
+    return this._isAuth;
+  }
 }
