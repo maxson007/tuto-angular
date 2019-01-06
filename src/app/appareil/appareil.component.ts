@@ -6,18 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appareil.component.scss']
 })
 export class AppareilComponent implements OnInit {
-  private _appareilName: string = 'Machine à laver';
-  private _appareilStatus: string = 'éteint';
+  appareilName: string = 'Machine à laver';
+  appareilStatus: string = 'éteint2';
   constructor() { }
 
   ngOnInit() {
-  }
-
-  get appareilName(): string {
-    return this._appareilName;
-  }
-
-  get appareilStatus(): string {
-    return this._appareilStatus;
   }
 }
