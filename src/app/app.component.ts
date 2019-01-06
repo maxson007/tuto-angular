@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +7,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
    isAuth = false;
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Frigo';
+  appareilThree = 'Ordinateur';
   constructor() {
     setTimeout(
       () => {
